@@ -23,6 +23,7 @@ list_inp=list(inp)
 
 #Using normal process to check the duplicate in an input string.
 #flg=check_duplicate_normal(list_inp)
+
 #Using defining set process to check the duplicate in an input string.
 flg=check_duplicate_set(list_inp)
 if flg is True:
