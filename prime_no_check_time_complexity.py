@@ -1,20 +1,22 @@
-
+#Checking of prime number:
 def checkPrime1(inp_num):
     flag=True
     print("Inside Method:1")
-    for i in range(2,(inp_num-1)):
+    for i in range(2,(inp_num-1)): #O(n)
         
         if inp_num%i==0:
             print("Number divisible by:",i)
             flag=False
     return flag
 
+
+
 import math
 def checkPrime2(inp_num):
     flag=True
     print("Inside Method:2")
     sq_inp_val=int(math.sqrt(inp_num))
-    for i in range(2,(sq_inp_val+1)):
+    for i in range(2,(sq_inp_val+1)): #O(sqrt(n)) < O(n)
         
         if inp_num%i==0:
             print("Number divisible by:",i)
